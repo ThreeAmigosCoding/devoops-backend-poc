@@ -10,4 +10,9 @@ class BackendPocApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void failingTest() {
+		throw new RuntimeException("This test is failing");
+	}
+
 }
