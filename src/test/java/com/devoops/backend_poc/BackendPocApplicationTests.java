@@ -11,8 +11,8 @@ class BackendPocApplicationTests {
 	}
 
 	@Test
-	void failingTest() {
-		throw new RuntimeException("This test is failing");
+	void notFailingTest() {
+		System.out.println( "Not failing test");
 	}
 
 }
