@@ -12,7 +12,7 @@ class BackendPocApplicationTests {
 
 	@Test
 	void notFailingTest() {
-		System.out.println( "Not failing test");
+		System.out.println( "Not failing test for sure, (Misa Rus)");
 	}
 
 }
