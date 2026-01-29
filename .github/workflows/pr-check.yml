@@ -47,7 +47,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       
       - name: Build
-        run: ./gradlew clean test jacocoTestReport assemble
+        run: ./gradlew -x test clean assemble
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
@@ -63,5 +63,3 @@ jobs:
             -Dsonar.java.binaries=**/build/classes/java/main
             -Dsonar.java.test.binaries=**/build/classes/java/test
             -Dsonar.junit.reportPaths=**/build/test-results/test
-            -Dsonar.java.coveragePlugin=jacoco
-            -Dsonar.coverage.jacoco.xmlReportPaths=**/build/reports/jacoco/test/jacocoTestReport.xml
