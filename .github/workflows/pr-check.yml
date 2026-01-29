@@ -28,7 +28,7 @@ jobs:
 
   sonarcloud:
     name: SonarCloud Analysis
-    needs: build
+    needs: build-and-test
     runs-on: ubuntu-latest
 
     steps:
