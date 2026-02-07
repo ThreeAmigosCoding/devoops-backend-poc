@@ -57,7 +57,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: build/libs
+          path: build
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
